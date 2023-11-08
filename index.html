@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La recursivité visuellement</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css">
+
+    <link rel="shortcut icon" href="./assets/washing-machine.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
+    <script defer src="./scripts/app.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>La recursivité visuellement</h1>
+            <p class="description">Notre valeur de base (ici le "Chiffre à transformer") va être divisé par deux autant de fois que nécessaire pour être inférieur ou égal a 5.<br>
+                Chaque nouvelle division sera à un nouveau niveau de récursivité.<br>
+                Quand la condition de fin sera remplie, chaque niveau de récursion finira de s'exécuter à l'inverse de l'ordre initial.<br>
+                 <span>Exemple : 1->2->3->Fin->3->2->1</span>
+            </p>
+
+        </div>
+
+        <div class="card">
+            <div class="card-content custom_card">
+                <div class="s12 m6 input-field">
+                    <input id="startValue" type="number" value="50" min="0">
+                    <label for="startValue">Chiffre à transformer</label>
+                    <span class="supporting-text">Doit etre un entier superieur a zéro</span>
+                </div>
+                <a id="launchRecursivity" class="btn-large green darken-2">Lancer la recursivité</a>
+            </div>
+        </div>
+  
+        <div>
+            
+        </div>
+    </header>
+    
+
+    <div class="result" >
+        <ul class="collection" id="resultContainer">
+        </ul>
+    </div>
+    <footer>
+        <p>Fait par <a href="https://www.linkedin.com/in/morgan-corroyer/">Morgan Corroyer</a></p>
+    </footer>
+</body>
+</html>

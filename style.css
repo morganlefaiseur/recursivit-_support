@@ -1,0 +1,34 @@
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+header {
+    display: flex;
+    padding: 15px 10px 10px 10px;
+    justify-content: space-evenly;
+}
+footer {
+    display: flex;
+    justify-content: center;
+}
+.green {
+    background-color: lightgreen;
+}
+.yellow {
+    background-color: lightgoldenrodyellow;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom_card {
+    display: flex;
+    flex-direction: column;
+}
+.custom_card .input-field {
+    padding: 10px 0;
+}
+.description {
+    font-size: 1.2rem;
+}
