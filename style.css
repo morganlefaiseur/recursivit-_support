@@ -1,3 +1,10 @@
+
+body {
+    background-color: #6cf5a7;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    font-family: 'Roboto', sans-serif;
+}
 h1 {
     font-size: 3rem;
     text-align: center;
@@ -6,10 +13,16 @@ header {
     display: flex;
     padding: 15px 10px 10px 10px;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 footer {
     display: flex;
     justify-content: center;
+}
+label {
+    font-size: 2rem!important;
 }
 .green {
     background-color: lightgreen;
